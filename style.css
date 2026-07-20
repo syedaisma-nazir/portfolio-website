@@ -40,7 +40,11 @@ header h1{
 
 nav{
 
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:20px;
 
 }
 
@@ -48,8 +52,8 @@ nav a{
 
     color:white;
     text-decoration:none;
-    margin:0 15px;
     font-weight:bold;
+    transition:.3s;
 
 }
 
@@ -58,27 +62,69 @@ nav a:hover{
     color:#ffd700;
 
 }
-
 /* Sections */
 
 section{
 
     background:white;
-    width:80%;
+    max-width:1000px;
+width:90%;
     margin:40px auto;
     padding:30px;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,.1);
 
 }
+/* Skills Grid */
 
-section h2{
+.skills-grid{
 
-    color:#1e3a8a;
-    margin-bottom:15px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:20px;
 
 }
 
+.skill-card{
+
+    background:#1e3a8a;
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-radius:8px;
+    font-weight:bold;
+
+}
+/* Skills Grid */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+.skill-card{
+
+    background:#1e3a8a;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
 /* Skills */
 
 ul{
@@ -99,14 +145,13 @@ input,
 textarea{
 
     width:100%;
-    padding:10px;
+    padding:12px;
     margin-top:5px;
     margin-bottom:20px;
     border:1px solid #ccc;
     border-radius:5px;
 
 }
-
 /* Button */
 
 button{
@@ -136,5 +181,54 @@ footer{
     text-align:center;
     padding:20px;
     margin-top:40px;
+
+}
+/* Responsive Design */
+
+@media (max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    header h1{
+
+        font-size:28px;
+
+    }
+
+    section{
+
+        padding:20px;
+
+    }
+
+    button{
+
+        width:100%;
+
+    }
+
+}
+.hero-container{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px 0;
+
+text-align:center;
 
 }
