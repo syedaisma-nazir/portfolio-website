@@ -47,3 +47,14 @@ function scrollToTop(){
     });
 
 }
+const projectButtons = document.querySelectorAll(".project-card button");
+
+projectButtons.forEach(button => {
+
+    button.addEventListener("click", function(){
+
+        alert("Project details will be added soon!");
+
+    });
+
+});

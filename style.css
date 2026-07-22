@@ -219,6 +219,11 @@ footer{
         grid-template-columns:1fr;
 
     }
+    .projects-grid{
+
+    grid-template-columns:1fr;
+
+}
 
     input,
     textarea,
@@ -276,12 +281,58 @@ img{
         grid-template-columns:repeat(2,1fr);
 
     }
+    .projects-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
 
     nav{
 
         gap:20px;
 
     }
+
+}
+/* Projects */
+
+.projects-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:20px;
+
+}
+
+.project-card{
+
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 8px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.project-card h3{
+
+    color:#1e3a8a;
+    margin-bottom:15px;
+
+}
+
+.project-card p{
+
+    margin-bottom:20px;
 
 }
 /* Small Mobile Devices */
@@ -299,6 +350,11 @@ img{
         font-size:16px;
 
     }
+    .projects-grid{
+
+    grid-template-columns:1fr;
+
+}
 
     section h2{
 
