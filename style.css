@@ -187,10 +187,30 @@ footer{
 
 @media (max-width:768px){
 
+    header{
+
+        padding:15px;
+
+    }
+
+    header h1{
+
+        font-size:28px;
+
+    }
+
     nav{
 
         flex-direction:column;
         align-items:center;
+        gap:15px;
+
+    }
+
+    section{
+
+        width:95%;
+        padding:20px;
 
     }
 
@@ -200,11 +220,14 @@ footer{
 
     }
 
-    header h1{
+    input,
+    textarea,
+    button{
 
-        font-size:28px;
+        width:100%;
 
     }
+
 
     section{
 
@@ -221,14 +244,79 @@ footer{
 }
 .hero-container{
 
-display:flex;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
+    flex-wrap:wrap;
 
-justify-content:center;
+}
+/* Responsive Images */
 
-align-items:center;
+img{
 
-padding:40px 0;
+    max-width:100%;
+    height:auto;
+    display:block;
 
-text-align:center;
+}
+/* Tablet Devices */
+
+@media (max-width:992px){
+
+    section{
+
+        width:95%;
+
+    }
+
+    .skills-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    nav{
+
+        gap:20px;
+
+    }
+
+}
+/* Small Mobile Devices */
+
+@media (max-width:480px){
+
+    header h1{
+
+        font-size:22px;
+
+    }
+
+    nav a{
+
+        font-size:16px;
+
+    }
+
+    section h2{
+
+        font-size:22px;
+
+    }
+
+    p{
+
+        font-size:15px;
+
+    }
+
+    button{
+
+        font-size:15px;
+        padding:10px;
+
+    }
 
 }
