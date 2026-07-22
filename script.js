@@ -58,3 +58,10 @@ projectButtons.forEach(button => {
     });
 
 });
+const resumeButton = document.querySelector("#resume button");
+
+resumeButton.addEventListener("click", function(){
+
+    alert("Your resume download will begin.");
+
+});
