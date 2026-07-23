@@ -47,17 +47,10 @@ function scrollToTop(){
     });
 
 }
-const projectButtons = document.querySelectorAll(".project-card button");
 
-projectButtons.forEach(button => {
 
-    button.addEventListener("click", function(){
+// Resume Button
 
-        alert("Project details will be added soon!");
-
-    });
-
-});
 const resumeButton = document.querySelector("#resume button");
 
 resumeButton.addEventListener("click", function(){
@@ -65,6 +58,8 @@ resumeButton.addEventListener("click", function(){
     alert("Your resume download will begin.");
 
 });
+
+
 // Contact Form Validation
 
 const contactForm = document.getElementById("contactForm");
@@ -92,5 +87,53 @@ contactForm.addEventListener("submit", function(event){
     alert("Thank you! Your message has been submitted.");
 
     contactForm.reset();
+
+});
+/* ===========================
+   Custom Cursor
+=========================== */
+
+const cursor=document.querySelector(".cursor");
+
+document.addEventListener("mousemove",function(e){
+
+    cursor.style.left=e.clientX+"px";
+
+    cursor.style.top=e.clientY+"px";
+
+});
+
+document.querySelectorAll("a,button,.skill-card,.project-card").forEach(item=>{
+
+    item.addEventListener("mouseenter",function(){
+
+        cursor.classList.add("hover");
+
+    });
+
+    item.addEventListener("mouseleave",function(){
+
+        cursor.classList.remove("hover");
+
+    });
+
+});
+document.addEventListener("mousemove",function(e){
+
+    const sparkle=document.createElement("span");
+
+    sparkle.className="sparkle";
+
+    sparkle.style.left=e.clientX+"px";
+
+    sparkle.style.top=e.clientY+"px";
+
+    document.body.appendChild(sparkle);
+
+    setTimeout(()=>{
+
+        sparkle.remove();
+
+    },500);
 
 });

@@ -1,0 +1,61 @@
+body{
+
+    font-family:Arial,sans-serif;
+
+    background:#f4f4f4;
+
+    margin:0;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:40px;
+
+}
+
+.project-image{
+
+    width:100%;
+
+    border-radius:10px;
+
+    margin:20px 0;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    background:#1e3a8a;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:5px;
+
+    margin:10px 10px 0 0;
+
+}
+
+.button:hover{
+
+    background:#274db6;
+
+}
+
+.back{
+
+    margin-top:40px;
+
+}
